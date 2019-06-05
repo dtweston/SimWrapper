@@ -16,12 +16,11 @@ struct RuntimeRow : View {
             VStack(alignment: .leading) {
                 Text(runtime.name)
                     .font(.title)
-                    Text(runtime.identifier)
-                        .font(.footnote)
-                        .truncationMode(.middle)
+                Text(runtime.identifier)
+                    .font(.footnote)
+                    .truncationMode(.middle)
                 }
             Spacer()
-            Image(systemName: "tv")
             }
         .padding()
     }
