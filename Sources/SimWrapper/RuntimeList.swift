@@ -9,7 +9,7 @@
 import SwiftUI
 
 public struct RuntimeList : View {
-    var body: some View {
+    public var body: some View {
         List(ModelData.runtimes) { runtime in
             RuntimeRow(runtime: runtime)
         }

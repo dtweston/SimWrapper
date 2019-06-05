@@ -11,7 +11,7 @@ import SwiftUI
 public struct RuntimeRow : View {
     var runtime: Runtime
     
-    var body: some View {
+    public var body: some View {
         HStack {
             VStack(alignment: .leading) {
                 Text(runtime.name)

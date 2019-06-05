@@ -33,12 +33,12 @@ public struct DeviceType {
 }
 
 public struct Runtime: Codable, Identifiable {
-    var id: ID {
+    public var id: ID {
         get { return identifier }
         set { identifier = newValue }
     }
     
-    typealias ID = String
+    public typealias ID = String
     
     let version: String
     let bundlePath: String

@@ -9,7 +9,7 @@
 import SwiftUI
 
 public struct RuntimeDetail : View {
-    var body: some View {
+    public var body: some View {
         Text("Hello world!")
     }
 }
