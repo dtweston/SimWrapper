@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct RuntimeRow : View {
+public struct RuntimeRow : View {
     var runtime: Runtime
     
     var body: some View {

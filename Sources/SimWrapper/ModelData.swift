@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-struct ModelData {
+public struct ModelData {
     static func load<T>(name: String, extension ext: String = "json") -> T where T: Decodable {
         guard let url = Bundle.main.url(forResource: name, withExtension: ext) else {
             fatalError("Unable to find \(name).\(ext) resource in main bundle")
@@ -23,16 +23,16 @@ struct ModelData {
         }
     }
     
-    static var runtimes: [Runtime] = load(name: "runtimes")
+    public static var runtimes: [Runtime] = load(name: "runtimes")
 }
 
-struct DeviceType {
+public struct DeviceType {
     let name: String
     let bundlePath: String
     let identifier: String
 }
 
-struct Runtime: Codable, Identifiable {
+public struct Runtime: Codable, Identifiable {
     var id: ID {
         get { return identifier }
         set { identifier = newValue }
@@ -48,7 +48,7 @@ struct Runtime: Codable, Identifiable {
     let buildversion: String
 }
 
-struct Device {
+public struct Device {
     let state: String
     let isAvailable: Bool
     let name: String
