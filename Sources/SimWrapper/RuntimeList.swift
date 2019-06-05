@@ -14,6 +14,9 @@ public struct RuntimeList : View {
             RuntimeRow(runtime: runtime)
         }
     }
+    
+    public init() {
+    }
 }
 
 #if DEBUG
